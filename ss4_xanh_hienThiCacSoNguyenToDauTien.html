@@ -27,16 +27,16 @@
     let count = 0;
     let n = 2;
     while (count < numbers) {
-        let a = true;
+        let checkPrime = true;
         for (let i = 2; i < n; i++) {
             if (n % i == 0) {
-                a = false;
+                checkPrime = false;
                 break;
             }
         }
-        if (a == true) {
+        if (checkPrime == true) {
             count++;
-            document.write('Số thứ ' + count + ' là : ' + n + '<br>');
+            document.write('Số nguyên tố thứ ' + count + ' là : ' + n + '<br>');
         }
         n++;
     }
